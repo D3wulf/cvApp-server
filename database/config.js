@@ -8,7 +8,7 @@ const dbConnection = async() => {
     try {
         //para la conexion, la url de conexion, el callback y los use son propios de mongoose
 
-        await mongoose.connect(process.env.DB_CNN, {
+        await mongoose.connect('process.env.DB_CNN', {
 
             useNewUrlParser: true,
             useUnifiedTopology: true,
