@@ -24,11 +24,6 @@ process.env
 const app = express();
 
 
-
-//directorio publico, queremos que busque en la carpeta public
-//app.use(express.static('public'));
-
-
 //cors es otro middleware, se ejecutara secuencial, he bajado la dbconnection()
 
 app.use(cors());
@@ -45,7 +40,7 @@ dbConnection();
 //Directorio público
 //Manejar el resto de rutas ( por meter angular )
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
 
 
@@ -61,9 +56,9 @@ app.use('/api/mensajes', require('./routes/formularioRuta'));
 // app.use('/api/upload', require('./routes/rutaUploads'));
 
 //Errores de recarga
-// app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'public/index.html'))
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'public/index.html'))
+});
 
 //listen, puerto , callback
 app.listen(process.env.PORT, () => {
