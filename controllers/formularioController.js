@@ -5,14 +5,20 @@ const Mensaje = require('../models/mensaje');
 const getMensajes = async(req, res = response) => {
 
 
+    const query = { ok: true };
 
-    const mensajes = await Mensaje.find();
-    console.log(mensajes);
+    const [total, usuarios] = await Promise.all([
+        Usuario.countDocuments(query),
+        Usuario.find(query)
+
+
+    ]);
+
     res.json({
         ok: true,
         mensajes
 
-    })
+    });
 }
 
 const crearMensaje = async(req, res = response) => {
