@@ -5,11 +5,11 @@ const Mensaje = require('../models/mensaje');
 const getMensajes = async(req, res = response) => {
 
 
-    const query = { ok: true };
 
-    const [total, usuarios] = await Promise.all([
-        Usuario.countDocuments(query),
-        Usuario.find(query)
+
+    const mensajes = await Promise.all([
+        Mensaje.countDocuments(),
+        Mensaje.find()
 
 
     ]);
