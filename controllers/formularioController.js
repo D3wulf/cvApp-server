@@ -4,13 +4,21 @@ const Mensaje = require('../models/mensaje');
 
 const getMensajes = async(req, res = response) => {
 
-    const mensajes = await Mensaje.find();
-    console.log(mensajes);
-    res.json({
-        ok: true,
-        mensajes
+    try {
 
-    })
+        const mensajes = await Mensaje.find();
+        console.log(mensajes);
+        res.json({
+            ok: true,
+            mensajes
+
+        })
+
+    } catch (error) {
+        console.log(error);
+    }
+
+
 }
 
 const crearMensaje = async(req, res = response) => {
