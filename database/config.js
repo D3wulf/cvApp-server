@@ -13,6 +13,8 @@ const dbConnection = async() => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true
+        }).catch((e) => {
+            console.log('handle error here: ', e.message)
         });
         console.log('DB Online ok')
 
