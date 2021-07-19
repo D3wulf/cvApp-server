@@ -12,7 +12,9 @@ const { dbConnection } = require('./database/config');
 
 
 //para que use el archivo .env
-require('dotenv').config();
+//require('dotenv').config();
+
+require('dotenv').config({ path: 'env' });
 
 //PARA LAS VARIABLES DE ENTORNO por eso instalamos el dotenv
 process.env
