@@ -6,7 +6,7 @@ const dbConnection = async() => {
 
     try {
 
-        await mongoose.connect(process.env.DB_CNN, {
+        await mongoose.connect('mongodb+srv://Miguel:Destino2021@junio2021.phawd.mongodb.net/miBaseDatos', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
