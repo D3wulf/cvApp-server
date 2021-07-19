@@ -1,7 +1,9 @@
 const express = require('express');
 
-//CORS ES PARA ACEPTAR PETICIONES DE DIFERENTES SITIOS
+
 const cors = require('cors');
+
+const { dbConnection } = require('./database/config');
 
 //para arreglar angular en node, el tema de las recargas de pagina
 const path = require('path');
@@ -13,7 +15,7 @@ dotenv.config({ path: __dirname + '/.env' });
 
 //Base de datos creado archivo de configuracion database/config
 
-const { dbConnection } = require('./database/config');
+
 
 
 
@@ -37,16 +39,12 @@ app.use(cors());
 
 app.use(express.json());
 
-//Conexion a  base de datos, tiene que ir despues de express!!!!
-//viene de ser exportada en el config.js
-dbConnection();
+
 
 //Directorio público
 //Manejar el resto de rutas ( por meter angular )
 
 app.use(express.static('public'));
-
-
 
 //Rutas (middleware) que vendran desde el archivo rutaUsuarios/rutaAuth
 //el use es el middleware, usa el require para importar las rutas
