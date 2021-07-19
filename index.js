@@ -6,15 +6,17 @@ const cors = require('cors');
 //para arreglar angular en node, el tema de las recargas de pagina
 const path = require('path');
 
+//para que use el archivo .env
+//require('dotenv').config();
+const dotenv = require('dotenv')
+dotenv.config({ path: __dirname + '/.env' });
+
 //Base de datos creado archivo de configuracion database/config
 
 const { dbConnection } = require('./database/config');
 
 
-//para que use el archivo .env
-//require('dotenv').config();
 
-require('dotenv').config({ path: 'env' });
 
 //PARA LAS VARIABLES DE ENTORNO por eso instalamos el dotenv
 process.env
