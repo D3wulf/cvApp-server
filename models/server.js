@@ -9,6 +9,8 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         this.mensajesPath = '/api/mensajes';
+        //futuro Login
+        this.authPath = '/api/auth';
 
         // Conectar a base de datos
         this.conectarDB();
@@ -40,6 +42,8 @@ class Server {
 
     routes() {
         this.app.use(this.mensajesPath, require('../routes/formularioRuta'));
+        //Añado la ruta por si pongo un login
+        this.app.use(this.authPath, require('../routes/authRuta'));
     }
 
     listen() {
