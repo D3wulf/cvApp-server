@@ -148,3 +148,362 @@ button.primary:active,
     background-repeat: repeat-y;
     background-size: 40rem auto;
 }
+
+@media screen and (max-width: 1152px) {
+    #wrapper>section.intro>header>* {
+        width: 100%;
+    }
+    #wrapper>section.intro>header:before {
+        margin-left: 0;
+    }
+}
+
+#wrapper>section:last-of-type>header:after {
+    left: calc(50vw - 5rem - 0.25rem + 1px);
+}
+
+#wrapper .copyright {
+    padding: 0 5rem;
+}
+
+@media screen and (max-width: 1280px) {
+    #wrapper {
+        padding: 0 0 8rem 0;
+    }
+    #wrapper section {
+        margin: 6rem 0 0 0;
+    }
+    #wrapper section>header {
+        padding: 0 8rem 0 4rem;
+        width: 33rem;
+    }
+    #wrapper section>.content {
+        padding: 0 4rem;
+    }
+    #wrapper section>footer {
+        padding: 0 8rem;
+    }
+    #wrapper>section>header:before {
+        height: calc(100% + 8rem);
+        left: calc(50vw - 4rem);
+    }
+    #wrapper>section>header h1:before,
+    #wrapper>section>header h2:before {
+        right: -4rem;
+        width: 2rem;
+    }
+    #wrapper>section>header h1:after,
+    #wrapper>section>header h2:after {
+        right: -2rem;
+    }
+    #wrapper>section>.content>section {
+        left: calc(-50vw - 4rem);
+    }
+    #wrapper>section>.content>section>header {
+        width: 30rem;
+    }
+    #wrapper>section.intro>header>* {
+        width: 21rem;
+    }
+    #wrapper>section.intro>header:before {
+        margin-left: calc(50vw - 8rem);
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-width: 1152px) {
+    #wrapper>section.intro>header>* {
+        width: 100%;
+    }
+    #wrapper>section.intro>header:before {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #wrapper>section:last-of-type>header:after {
+        left: calc(50vw - 4rem - 0.25rem + 1px);
+    }
+    #wrapper .copyright {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    #wrapper {
+        padding: 0;
+    }
+    #wrapper:before {
+        display: none;
+    }
+    #wrapper section {
+        grid-template-areas: "header" "content" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    #wrapper section>header {
+        justify-self: start;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+    #wrapper section>header ul.actions {
+        justify-content: flex-start;
+    }
+    #wrapper section>.content {
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #wrapper section>footer {
+        padding: 0;
+        text-align: left;
+    }
+    #wrapper section>footer ul.actions {
+        justify-content: flex-start;
+    }
+    #wrapper>section {
+        margin: 0;
+    }
+    #wrapper>section>header {
+        background-attachment: fixed;
+        background-color: #ef5350;
+        background-position: 25% 50%;
+        background-repeat: repeat-y;
+        background-size: 40rem auto;
+    }
+    #wrapper>section>header>* {
+        max-width: 25rem;
+    }
+    #wrapper>section>header> :last-child {
+        margin-bottom: 0;
+    }
+    #wrapper>section>header:before {
+        display: none;
+    }
+    #wrapper>section>header h1:before,
+    #wrapper>section>header h2:before {
+        display: none;
+    }
+    #wrapper>section>header h1:after,
+    #wrapper>section>header h2:after {
+        display: none;
+    }
+    #wrapper>section>.content> :last-child {
+        margin-bottom: 0;
+    }
+    #wrapper>section>.content>section {
+        left: 0;
+    }
+    #wrapper>section>.content>section:first-child {
+        margin-top: 0;
+    }
+    #wrapper>section>.content>section>header {
+        width: 100%;
+    }
+    #wrapper>section>.content>section:last-child {
+        margin-bottom: 0;
+    }
+    #wrapper>section>footer> :last-child {
+        margin-bottom: 0;
+    }
+    #wrapper>section.intro {
+        margin-bottom: 0;
+    }
+    #wrapper>section.intro>header {
+        margin-bottom: 0;
+    }
+    #wrapper>section.intro>header ul.actions {
+        display: none;
+    }
+    #wrapper>section.intro>header>* {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    #wrapper>section.intro>header>ul.actions {
+        margin-left: -1rem;
+    }
+    #wrapper>section.intro>header:before {
+        margin-left: 0;
+    }
+    #wrapper>section:last-of-type>header:after {
+        display: none;
+    }
+    #wrapper .copyright {
+        left: 0;
+        width: 100%;
+    }
+    #wrapper section {
+        margin: 6rem 0 0 0;
+    }
+    #wrapper>section {
+        margin: 0;
+    }
+    #wrapper>section>header {
+        padding: 4rem 4rem;
+    }
+    #wrapper>section>.content {
+        padding: 4rem 4rem;
+    }
+    #wrapper>section>.content>section {
+        margin: 4rem 0;
+    }
+    #wrapper>section>footer {
+        padding: 0 4rem 4rem 4rem;
+    }
+    #wrapper>section.intro>header {
+        padding: 8rem 4rem 5rem 4rem;
+    }
+    #wrapper .copyright {
+        padding: 0 4rem 4rem 4rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #wrapper section {
+        margin: 3rem 0 0 0;
+    }
+    #wrapper>section {
+        margin: 0;
+    }
+    #wrapper>section>header {
+        padding: 3rem 2rem;
+    }
+    #wrapper>section>.content {
+        padding: 3rem 2rem;
+    }
+    #wrapper>section>.content>section {
+        margin: 3rem 0;
+    }
+    #wrapper>section>footer {
+        padding: 0 2rem 3rem 2rem;
+    }
+    #wrapper>section.intro>header {
+        padding: 5.5rem 2rem 2.5rem 2rem;
+    }
+    #wrapper .copyright {
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #wrapper section {
+        margin: 2.25rem 0 0 0;
+    }
+    #wrapper>section {
+        margin: 0;
+    }
+    #wrapper>section>header {
+        padding: 2.25rem 1.5rem;
+    }
+    #wrapper>section>.content {
+        padding: 2.25rem 1.5rem;
+    }
+    #wrapper>section>.content>section {
+        margin: 2.25rem 0;
+    }
+    #wrapper>section>footer {
+        padding: 0 1.5rem 2.25rem 1.5rem;
+    }
+    #wrapper>section.intro>header {
+        padding: 4.875rem 1.5rem 1.875rem 1.5rem;
+    }
+    #wrapper .copyright {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+body.is-mobile #wrapper:before {
+    background-attachment: scroll;
+    background-position: 50% -3%;
+    background-repeat: repeat-y;
+    background-size: 150% auto;
+}
+
+body.is-mobile #wrapper>section>header {
+    background-attachment: scroll;
+    background-position: 25% 50%;
+}
+
+body.is-mobile #wrapper>section.intro>header {
+    background-position: 25% 23%;
+}
+
+#wrapper:before {
+    transition: opacity 1s ease;
+}
+
+body.is-preload #wrapper:before {
+    opacity: 0;
+}
+
+#wrapper>section.intro {
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+#wrapper>section.intro>header {
+    transition: transform 1s ease;
+}
+
+#wrapper>section.intro>.content {
+    transition: transform 1s ease;
+}
+
+body.is-preload #wrapper>section.intro {
+    opacity: 0;
+}
+
+body.is-preload #wrapper>section.intro>header {
+    transform: translateY(1rem);
+}
+
+body.is-preload #wrapper>section.intro>.content {
+    transform: translateY(-1rem);
+}
+
+@media screen and (max-width: 1280px) {
+    #wrapper>section.intro>header>* {
+        transition: transform 1s ease, opacity 1s ease;
+    }
+    body.is-preload #wrapper>section.intro>header {
+        transform: none;
+    }
+    body.is-preload #wrapper>section.intro>header>* {
+        transform: translate(-0.5rem);
+        opacity: 0;
+    }
+    body.is-preload #wrapper>section.intro>.content {
+        transform: none;
+    }
+}
+
+body.is-ie #wrapper section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body.is-ie #wrapper section>header {
+    width: 50%;
+}
+
+body.is-ie #wrapper section>.content {
+    width: 50%;
+}
+
+body.is-ie #wrapper section>footer {
+    width: 50%;
+    text-align: left;
+    margin-left: 50%;
+    padding: 5rem;
+}
+
+body.is-ie #wrapper>section>.content>section {
+    width: 100vw;
+}
+
+@media screen and (max-width: 1280px) {
+    body.is-ie #wrapper section>footer {
+        padding: 4rem;
+    }
+}
